@@ -6,6 +6,12 @@ namespace LogicLayer
 {
     public class SortingAlgorithm
     {
+        public List<Wagon> trainList;
+
+        public SortingAlgorithm()
+        {
+            this.trainList = new List<Wagon>();
+        }
         public List<Animal> SortAnimals(List<Animal> animalList)
         {
             animalList = SortBySize(animalList);
@@ -16,7 +22,7 @@ namespace LogicLayer
         {
             List<Animal> carnivoreList = new List<Animal>();
             List<Animal> herbivoreList = new List<Animal>();
-            foreach(Animal animal in oldAnimals)
+            foreach (Animal animal in oldAnimals)
             {
                 if (animal.animalType == Animal.AnimalType.Carnivore)
                     carnivoreList.Add(animal);
@@ -32,7 +38,7 @@ namespace LogicLayer
             foreach (Animal loop in oldAnimals)
             {
                 Animal tempAnimal = new Animal(Animal.AnimalType.Herbivore, Animal.AnimalSize.Large);
-                foreach(Animal animal in oldAnimals)
+                foreach (Animal animal in oldAnimals)
                 {
                     if ((int)animal.animalSize <= (int)tempAnimal.animalSize)
                     {
@@ -42,5 +48,34 @@ namespace LogicLayer
             }
             return returnList;
         }
+
+        public List<Wagon> AvailableWagon(List<Animal> animalList)
+        {
+            foreach (Animal animal in animalList)
+            {
+                if (animal.animalType == Animal.AnimalType.Carnivore)
+                {
+                    Wagon wagon = new Wagon(Wagon.WagonSize.Regular);
+                    wagon.AnimalsinWagon.Add(animal);
+                }
+                else if (animal.animalType == Animal.AnimalType.Herbivore)
+                {
+                   foreach(Wagon wagon in trainList)
+                    {
+                        if(wagon.spaceAvailable >= (int)animal.animalSize)
+                        {
+
+                            if (wagon.AnimalsinWagon.Exists(placedanimal => placedanimal.animalType == Animal.AnimalType.Carnivore))
+                            {
+                                if(animal.animalSize=> )
+                                
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+
     }
 }
