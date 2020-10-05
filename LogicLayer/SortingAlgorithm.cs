@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 
 namespace LogicLayer
@@ -34,17 +35,25 @@ namespace LogicLayer
         }
         public List<Animal> SortBySize(List<Animal> oldAnimals)
         {
+            Animal[] oldAnimalsArray = oldAnimals.ToArray();
             List<Animal> returnList = new List<Animal>();
-            foreach (Animal loop in oldAnimals)
+            for (int j = 0; j < oldAnimalsArray.Length; j++)
             {
                 Animal tempAnimal = new Animal(Animal.AnimalType.Herbivore, Animal.AnimalSize.Large);
-                foreach (Animal animal in oldAnimals)
+                int index = 0;
+                for (int i = 0; i < oldAnimalsArray.Length; i++)
                 {
-                    if ((int)animal.animalSize <= (int)tempAnimal.animalSize)
+                    if(oldAnimalsArray[i] != null)
                     {
-                        returnList.Add(animal);
+                        if ((int)oldAnimalsArray[i].animalSize <= (int)tempAnimal.animalSize)
+                        {
+                            tempAnimal = oldAnimalsArray[i];
+                            index = i;
+                        }
                     }
                 }
+                oldAnimalsArray[index] = null;
+                returnList.Add(tempAnimal);
             }
             return returnList;
         }
@@ -56,24 +65,63 @@ namespace LogicLayer
                 if (animal.animalType == Animal.AnimalType.Carnivore)
                 {
                     Wagon wagon = new Wagon(Wagon.WagonSize.Regular);
+                    trainList.Add(wagon);
                     wagon.AnimalsinWagon.Add(animal);
+                    wagon.spaceAvailable -= (int)animal.animalSize;
                 }
                 else if (animal.animalType == Animal.AnimalType.Herbivore)
                 {
-                   foreach(Wagon wagon in trainList)
+                    bool isanimalPlaced = false;
+                    foreach (Wagon wagon in trainList)
                     {
+                        
                         if(wagon.spaceAvailable >= (int)animal.animalSize)
                         {
-
-                            if (wagon.AnimalsinWagon.Exists(placedanimal => placedanimal.animalType == Animal.AnimalType.Carnivore))
+                            Animal tempAnimal = wagon.AnimalsinWagon.Find(temp => temp.animalType == Animal.AnimalType.Carnivore);
+                            if (tempAnimal != null)
                             {
-                                if(animal.animalSize=> )
-                                
+                                if(animal.animalSize > tempAnimal.animalSize)
+                                {
+                                    wagon.AnimalsinWagon.Add(animal);
+                                    wagon.spaceAvailable -= (int)animal.animalSize;
+                                    isanimalPlaced = true;
+                                }                               
+                            }
+                            else
+                            {
+                                wagon.AnimalsinWagon.Add(animal);
+                                wagon.spaceAvailable -= (int)animal.animalSize;
+                                isanimalPlaced = true;
                             }
                         }
+                        if  (isanimalPlaced == true)
+                            break;
+                    }
+                    
+                    if (isanimalPlaced == false)
+                    {
+                        Wagon wagon = new Wagon(Wagon.WagonSize.Regular);
+                        trainList.Add(wagon);
+                        wagon.AnimalsinWagon.Add(animal);
+                        wagon.spaceAvailable -= (int)animal.animalSize;
                     }
                 }
             }
+            return trainList;
+        }
+        public string DisplayAnimals(List<Wagon>trainlist)
+        {
+            string output = "";
+            foreach (Wagon wagon in trainList)
+            {
+                output += "wagon" + '\n'; 
+                foreach(Animal animal in wagon.AnimalsinWagon)
+                {
+                    output += animal.animalType.ToString() + animal.animalSize.ToString() + '\n';
+                }
+                output += '\n';
+            }
+            return output;
         }
 
 

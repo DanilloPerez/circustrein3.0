@@ -1,8 +1,40 @@
-﻿@{
+﻿@model forminputmodel
+@{
     ViewData["Title"] = "Home Page";
+  
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <form asp-action="Index" asp-controller="Home" method="post">
+    <div class="form-group">
+        <label for="largeHerb">Large Herbivore</label>
+        <input type="number" class="form-control" min="0" max="150" id="largeHerb" asp-for="@Model.bigHerbivore">
+    </div>
+    <div class="form-group">
+        <label for="mediumHerb">Medium Herbivore</label>
+        <input type="number" class="form-control" min="0" max="150" id="mediumHerb" asp-for="@Model.mediumHerbivore">
+    </div>
+    <div class="form-group">
+        <label for="smallHerb">Small Herbivore</label>
+        <input type="number" class="form-control" min="0" max="150" id="smallHerb" asp-for="@Model.smallHerbivore" >
+    </div>
+    <div class="form-group">
+        <label for="largeCarn">Large Carnivore</label>
+        <input type="number" class="form-control" min="0" max="150" id="largeCarn" asp-for="@Model.bigCarnivore" >
+    </div>
+    <div class="form-group">
+        <label for="mediumCarn">Medium Carnivore</label>
+        <input type="number" class="form-control" min="0" max="150" id="mediumCarn" asp-for="@Model.mediumCarnivore" >
+    </div>
+    <div class="form-group">
+        <label for="smallCarn">Small Carnivore</label>
+        <input type="number" class="form-control" min="0" max="150" id="smallCarn" asp-for="@Model.smallCarnivore" >
+    </div>
+    <button type="submit" formmethod="post" class="btn btn-primary">Submit</button>
+    @if (Model.output != null)
+    {<div>
+        <label>Output</label>
+        <div>@Html.Raw(Model.output.Replace("\n", "<br />"))</div>
+    </div>}
+</form>
 </div>

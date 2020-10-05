@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    ".NETCoreApp,Version=v3.1": {}
+    ".NETCoreApp,Version=v3.1": {
+      "LogicLayer/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/LogicLayer.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/LogicLayer.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "LogicLayer/1.0.0": {
+      "type": "project",
+      "path": "../LogicLayer/LogicLayer.csproj",
+      "msbuildProject": "../LogicLayer/LogicLayer.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    ".NETCoreApp,Version=v3.1": []
+    ".NETCoreApp,Version=v3.1": [
+      "LogicLayer >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\danil\\.nuget\\packages\\": {}
@@ -32,7 +51,11 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\danil\\Desktop\\Projects\\Circustrein3.0\\circustrein3.0\\LogicLayer\\LogicLayer.csproj": {
+              "projectPath": "C:\\Users\\danil\\Desktop\\Projects\\Circustrein3.0\\circustrein3.0\\LogicLayer\\LogicLayer.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

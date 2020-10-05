@@ -1,0 +1,9 @@
+C:\Users\danil\Desktop\Projects\Circustrein3.0\circustrein3.0\LogicLayer\bin\Debug\netcoreapp3.1\LogicLayer.deps.json
+C:\Users\danil\Desktop\Projects\Circustrein3.0\circustrein3.0\LogicLayer\bin\Debug\netcoreapp3.1\LogicLayer.dll
+C:\Users\danil\Desktop\Projects\Circustrein3.0\circustrein3.0\LogicLayer\bin\Debug\netcoreapp3.1\LogicLayer.pdb
+C:\Users\danil\Desktop\Projects\Circustrein3.0\circustrein3.0\LogicLayer\obj\Debug\netcoreapp3.1\LogicLayer.csprojAssemblyReference.cache
+C:\Users\danil\Desktop\Projects\Circustrein3.0\circustrein3.0\LogicLayer\obj\Debug\netcoreapp3.1\LogicLayer.AssemblyInfoInputs.cache
+C:\Users\danil\Desktop\Projects\Circustrein3.0\circustrein3.0\LogicLayer\obj\Debug\netcoreapp3.1\LogicLayer.AssemblyInfo.cs
+C:\Users\danil\Desktop\Projects\Circustrein3.0\circustrein3.0\LogicLayer\obj\Debug\netcoreapp3.1\LogicLayer.csproj.CoreCompileInputs.cache
+C:\Users\danil\Desktop\Projects\Circustrein3.0\circustrein3.0\LogicLayer\obj\Debug\netcoreapp3.1\LogicLayer.dll
+C:\Users\danil\Desktop\Projects\Circustrein3.0\circustrein3.0\LogicLayer\obj\Debug\netcoreapp3.1\LogicLayer.pdb

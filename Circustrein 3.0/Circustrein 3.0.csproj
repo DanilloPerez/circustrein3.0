@@ -5,4 +5,8 @@
     <RootNamespace>Circustrein_3._0</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\LogicLayer\LogicLayer.csproj" />
+  </ItemGroup>
+
 </Project>
