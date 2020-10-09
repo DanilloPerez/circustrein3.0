@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/LZGA1CYI3p+4RYmCQOp/fzSRFhZ7lC7TTyz/EgegLEwIRVFcc3SM7NK7Sn7QbbbDrmPzCvGcxZWzHmrLvpO3w==",
+  "dgSpecHash": "gXcI/TBQAhQZnDAiM54OPYvumQZyiySoLINvWdEi3TDDBdCs8+h4cj6TCEIGx9fGdi+i+A9f/RL51y86ci+Xyw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\danil\\Desktop\\Projects\\Circustrein3.0\\circustrein3.0\\ControllerLayer\\ControllerLayer.csproj",
+  "projectFilePath": "C:\\Users\\danil\\Source\\Repos\\circustrein3.0\\ControllerLayer\\ControllerLayer.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

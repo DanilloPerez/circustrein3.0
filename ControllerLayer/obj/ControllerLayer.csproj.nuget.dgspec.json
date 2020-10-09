@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\danil\\Desktop\\Projects\\Circustrein3.0\\circustrein3.0\\ControllerLayer\\ControllerLayer.csproj": {}
+    "C:\\Users\\danil\\Source\\Repos\\circustrein3.0\\ControllerLayer\\ControllerLayer.csproj": {}
   },
   "projects": {
-    "C:\\Users\\danil\\Desktop\\Projects\\Circustrein3.0\\circustrein3.0\\ControllerLayer\\ControllerLayer.csproj": {
+    "C:\\Users\\danil\\Source\\Repos\\circustrein3.0\\ControllerLayer\\ControllerLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\danil\\Desktop\\Projects\\Circustrein3.0\\circustrein3.0\\ControllerLayer\\ControllerLayer.csproj",
+        "projectUniqueName": "C:\\Users\\danil\\Source\\Repos\\circustrein3.0\\ControllerLayer\\ControllerLayer.csproj",
         "projectName": "ControllerLayer",
-        "projectPath": "C:\\Users\\danil\\Desktop\\Projects\\Circustrein3.0\\circustrein3.0\\ControllerLayer\\ControllerLayer.csproj",
+        "projectPath": "C:\\Users\\danil\\Source\\Repos\\circustrein3.0\\ControllerLayer\\ControllerLayer.csproj",
         "packagesPath": "C:\\Users\\danil\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\danil\\Desktop\\Projects\\Circustrein3.0\\circustrein3.0\\ControllerLayer\\obj\\",
+        "outputPath": "C:\\Users\\danil\\Source\\Repos\\circustrein3.0\\ControllerLayer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\danil\\AppData\\Roaming\\NuGet\\NuGet.Config",

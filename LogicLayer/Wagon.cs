@@ -12,7 +12,7 @@ namespace LogicLayer
         {
             Regular = 10,
         }
-        public WagonSize wagonSize { get; set; }
+        public WagonSize wagonSize { get; private set; }
 
         public Wagon(WagonSize size)
         {

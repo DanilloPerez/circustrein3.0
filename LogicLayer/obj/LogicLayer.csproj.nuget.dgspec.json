@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\danil\\Desktop\\Projects\\Circustrein3.0\\circustrein3.0\\LogicLayer\\LogicLayer.csproj": {}
+    "C:\\Users\\danil\\source\\repos\\circustrein3.0\\LogicLayer\\LogicLayer.csproj": {}
   },
   "projects": {
-    "C:\\Users\\danil\\Desktop\\Projects\\Circustrein3.0\\circustrein3.0\\LogicLayer\\LogicLayer.csproj": {
+    "C:\\Users\\danil\\source\\repos\\circustrein3.0\\LogicLayer\\LogicLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\danil\\Desktop\\Projects\\Circustrein3.0\\circustrein3.0\\LogicLayer\\LogicLayer.csproj",
+        "projectUniqueName": "C:\\Users\\danil\\source\\repos\\circustrein3.0\\LogicLayer\\LogicLayer.csproj",
         "projectName": "LogicLayer",
-        "projectPath": "C:\\Users\\danil\\Desktop\\Projects\\Circustrein3.0\\circustrein3.0\\LogicLayer\\LogicLayer.csproj",
+        "projectPath": "C:\\Users\\danil\\source\\repos\\circustrein3.0\\LogicLayer\\LogicLayer.csproj",
         "packagesPath": "C:\\Users\\danil\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\danil\\Desktop\\Projects\\Circustrein3.0\\circustrein3.0\\LogicLayer\\obj\\",
+        "outputPath": "C:\\Users\\danil\\source\\repos\\circustrein3.0\\LogicLayer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\danil\\AppData\\Roaming\\NuGet\\NuGet.Config",

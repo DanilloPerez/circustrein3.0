@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\danil\\Desktop\\Projects\\Circustrein3.0\\circustrein3.0\\View\\View.csproj": {}
+    "C:\\Users\\danil\\Source\\Repos\\circustrein3.0\\View\\View.csproj": {}
   },
   "projects": {
-    "C:\\Users\\danil\\Desktop\\Projects\\Circustrein3.0\\circustrein3.0\\View\\View.csproj": {
+    "C:\\Users\\danil\\Source\\Repos\\circustrein3.0\\View\\View.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\danil\\Desktop\\Projects\\Circustrein3.0\\circustrein3.0\\View\\View.csproj",
+        "projectUniqueName": "C:\\Users\\danil\\Source\\Repos\\circustrein3.0\\View\\View.csproj",
         "projectName": "View",
-        "projectPath": "C:\\Users\\danil\\Desktop\\Projects\\Circustrein3.0\\circustrein3.0\\View\\View.csproj",
+        "projectPath": "C:\\Users\\danil\\Source\\Repos\\circustrein3.0\\View\\View.csproj",
         "packagesPath": "C:\\Users\\danil\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\danil\\Desktop\\Projects\\Circustrein3.0\\circustrein3.0\\View\\obj\\",
+        "outputPath": "C:\\Users\\danil\\Source\\Repos\\circustrein3.0\\View\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\danil\\AppData\\Roaming\\NuGet\\NuGet.Config",
