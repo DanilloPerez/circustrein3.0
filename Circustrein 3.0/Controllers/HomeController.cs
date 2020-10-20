@@ -18,7 +18,7 @@ namespace Circustrein_3._0.Controllers
         {
             _logger = logger;
         }
-      [HttpGet]
+        [HttpGet]
         public IActionResult Index(forminputmodel model, string x)
         {
             return View(model);
@@ -57,12 +57,11 @@ namespace Circustrein_3._0.Controllers
                 Animal animal = new Animal(Animal.AnimalType.Carnivore, Animal.AnimalSize.Small);
                 animalList.Add(animal);
             }
-            SortingAlgorithm sort = new SortingAlgorithm();
-            animalList = sort.SortAnimals(animalList);
-            List<Wagon>WagonList = sort.AvailableWagon(animalList);
-            model.output = sort.DisplayAnimals(WagonList);
+            Station station = new Station();
+            List<Wagon> wagons = station.StartLoadingTrain(animalList);
+            model.output = DisplayAnimals(wagons);
             return View(model);
-            
+
 
         }
         public IActionResult Privacy()
@@ -74,6 +73,20 @@ namespace Circustrein_3._0.Controllers
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+        }
+        private string DisplayAnimals(List<Wagon> trainList)
+        {
+            string output = "";
+            foreach (Wagon wagon in trainList)
+            {
+                output += "wagon" + '\n';
+                foreach (Animal animal in wagon.AnimalsinWagon)
+                {
+                    output += animal.animalType.ToString() + animal.animalSize.ToString() + '\n';
+                }
+                output += '\n';
+            }
+            return output;
         }
     }
 }
