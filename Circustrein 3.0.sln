@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Circustrein 3.0", "Circustr
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LogicLayer", "LogicLayer\LogicLayer.csproj", "{03C7C704-E37B-459B-B609-0A74AEE64465}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogicLayerTests", "LogicLayerTests\LogicLayerTests.csproj", "{D52CC58B-1973-44A7-8A98-36F9AD3C8BC0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{03C7C704-E37B-459B-B609-0A74AEE64465}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{03C7C704-E37B-459B-B609-0A74AEE64465}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{03C7C704-E37B-459B-B609-0A74AEE64465}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D52CC58B-1973-44A7-8A98-36F9AD3C8BC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D52CC58B-1973-44A7-8A98-36F9AD3C8BC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D52CC58B-1973-44A7-8A98-36F9AD3C8BC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D52CC58B-1973-44A7-8A98-36F9AD3C8BC0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

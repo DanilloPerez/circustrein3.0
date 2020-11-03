@@ -14,7 +14,7 @@ namespace LogicLayer
             train = new Train();
         }
 
-       private List<Animal> SortAnimals(List<Animal> animalList)
+        private List<Animal> SortAnimals(List<Animal> animalList)
         {
             animalList = SortBySize(animalList);
             animalList = SortByType(animalList);
@@ -62,7 +62,43 @@ namespace LogicLayer
         public List<Wagon> StartLoadingTrain(List<Animal> animalList)
         {
             animalList = SortAnimals(animalList);
-            return train.AssignWagon(animalList);
+            foreach (Animal animal in animalList)
+            {
+                // check for animaltype and make new wagon if carnivore
+                if (animal.animalType == Animal.AnimalType.Carnivore)
+                {
+                    Wagon wagon = new Wagon(Wagon.WagonSize.Regular);
+                    wagon.PlaceAnimal(animal);
+                    train.trainList.Add(wagon);
+
+                }
+                //check for animaltype and try to place in used wagon, else make new wagon
+                else if (animal.animalType == Animal.AnimalType.Herbivore)
+                {
+                    HandleHerbivore(animal);
+                }
+            }
+            return train.trainList;
+        }
+        public List<Wagon> HandleHerbivore(Animal animal)
+        {
+            bool isAnimalPlaced = false;
+            foreach (Wagon wagon in train.trainList)
+            {
+
+                if (!isAnimalPlaced)
+                {
+                    isAnimalPlaced = wagon.TryPlaceAnimal(animal);
+                }
+            }
+
+            if (!isAnimalPlaced)
+            {
+                Wagon wagon = new Wagon(Wagon.WagonSize.Regular);
+                wagon.PlaceAnimal(animal);
+                train.trainList.Add(wagon);
+            }
+            return train.trainList;
         }
     }
 }
